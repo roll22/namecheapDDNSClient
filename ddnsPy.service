@@ -1,0 +1,10 @@
+[Unit]
+Description=DDNS Change
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 /path/to/ddnsPy.py
+
+[Install]
+WantedBy=multi-user.target
